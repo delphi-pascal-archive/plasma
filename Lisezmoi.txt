@@ -1,0 +1,37 @@
+          Plasma
+___________________________
+Dark Skull Software
+http://www.dark-skull.fr.st
+edrad@wanadoo.fr
+___________________________
+
+Ce programme est une animation de type Plasma, effet très connu
+dans les démos du temps du DOS. Voici une version Windows optimisée
+à 100%, en plein écran, avec affichage des statistiques... J'ai limité
+le FrameRate à 50 FPS car au-delà l'animation est difficilement supportable,
+et provoque des maux de tête.
+
+Vous pouvez appuyez sur la touche : 
+* Echap pour quitter 
+* S pour afficher/masquer les statistiques 
+
+Le code est basé sur un exemple trouvé dans les SWAG, une librairie de code
+pour Turbo Pascal très interressante (http://www.gdsoft.com/swag/swag.html),
+bien que la dernière mise à jour date de 1997. J'ai pas mal optimisé le code,
+de sorte à ce que l'animation soit fluide même en 1280x1024... Il devrait
+être compilable sous Delphi 3, 4, 5 et 6.
+
+Liste des optimisations : 
+* Remplacement des bytes par des integer 
+* Utilisation d'un Bitmap Tile 256x2x6x8 pour le calcul 
+* Utilisation d'un Bitmap Tile 256x256 à la profondeur d'écran pour l'affichage 
+* Utilisation du ScanLine 
+* Utilisation de Threads 
+* Remplacement des mod par des and 
+* Remplacement des * et / par des shr et shl 
+
+___________________________
+Dark Skull Software
+http://www.dark-skull.fr.st
+edrad@wanadoo.fr
+___________________________
